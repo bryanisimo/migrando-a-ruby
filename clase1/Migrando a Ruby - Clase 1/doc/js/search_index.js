@@ -1,0 +1,1 @@
+var search_data = {"index":{"searchIndex":["object","my_method()","other_method()"],"longSearchIndex":["object","object#my_method()","object#other_method()"],"info":[["Object","","Object.html","",""],["my_method","Object","Object.html#method-i-my_method","()",""],["other_method","Object","Object.html#method-i-other_method","(arg1)",""]]}}

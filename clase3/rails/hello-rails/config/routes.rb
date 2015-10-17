@@ -1,18 +1,5 @@
 Rails.application.routes.draw do
-  get 'dogs/index'
-
-  get 'dogs/show'
-
-  get 'dogs/edit'
-
-  get 'dogs/update'
-
-  get 'dogs/new'
-
-  get 'dogs/create'
-
-  get 'dogs/delete'
-
+  resources :dogs
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

@@ -2,7 +2,8 @@ require 'sinatra'
 require 'slim'
 
 get '/' do
-    slim :index
+  @list = [ 2,5,89,3,6,8,4]
+  slim :index
 end
 
 get '/hello-world' do

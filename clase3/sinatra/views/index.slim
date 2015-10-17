@@ -1,2 +1,6 @@
 h1 Index
-p Hola debes entrar
+p Hola soy el índice
+h3 Esto es un ejemplo de
+- @list.each_with_index do |number, i|
+  div id="num-#{ i + 1 }" = "El número de la posición es #{ i } con valor #{ number }"
+p termina el listado

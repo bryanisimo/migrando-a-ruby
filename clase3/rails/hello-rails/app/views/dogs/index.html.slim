@@ -1,2 +1,18 @@
-h1 Dogs#index
-p Find me in app/views/dogs/index.html.slim
+h1 Perritos
+table
+  thead
+    tr
+      th Nombre
+      th Raza
+      th Color
+      th Descripción
+      th Acciones
+  tbody
+  - @dogs.each do |dog|
+    tr
+      td = dog.name
+      td = dog.breed
+      td = dog.color
+      td = dog.description
+      td
+        a Click Aquí

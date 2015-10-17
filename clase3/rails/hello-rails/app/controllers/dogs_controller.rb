@@ -1,10 +1,15 @@
 class DogsController < ApplicationController
   def index
+    @dogs = Dog.all
   end
 
   def create
     @dog = Dog.new(dog_params)
-    @dog.save
+    if @dog.save
+      redirect_to dogs_path
+    else
+      render :new
+    end
   end
 
   def new

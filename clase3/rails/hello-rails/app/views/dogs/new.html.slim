@@ -1,2 +1,7 @@
-h1 Dogs#new
-p Find me in app/views/dogs/new.html.slim
+h1 DCrear perrito
+= form_for @dog do |f|
+  = f.text_field :name, placeholder: 'Nombre'
+  = f.text_field :color, placeholder: 'Color'
+  = f.text_field :breed, placeholder: 'Raza'
+  = f.text_field :description, placeholder: 'Descripción'
+  = f.submit

@@ -13,3 +13,7 @@
  *= require bootstrap_import
  *= require_self
  */
+ .thumbnail{
+   display: block;
+   max-width: 100px;
+ }

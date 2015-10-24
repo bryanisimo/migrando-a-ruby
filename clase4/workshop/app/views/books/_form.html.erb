@@ -14,5 +14,7 @@
   <%= f.input :title %>
   <%= f.input :year %>
   <%= f.input :author_id %>
+  <%= f.file_field :cover, multiple: false %>
+  <div><%= image_tag( @book.cover, {class: 'thumbnail'}) %></div>
   <%= f.button :submit %>
 <% end %>

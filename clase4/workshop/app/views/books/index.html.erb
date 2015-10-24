@@ -5,6 +5,7 @@
 <table class="table">
   <thead>
     <tr>
+      <th>Cover</th>
       <th>Title</th>
       <th>Year</th>
       <th>Author</th>
@@ -15,6 +16,7 @@
   <tbody>
     <% @books.each do |book| %>
       <tr>
+        <td><%= image_tag(book.cover, class:'thumbnail') %></td>
         <td><%= book.title %></td>
         <td><%= book.year %></td>
         <td><%= book.author_id %></td>

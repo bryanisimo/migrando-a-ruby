@@ -16,7 +16,7 @@
   <tbody>
     <% @books.each do |book| %>
       <tr>
-        <td><%= image_tag(book.cover, class:'thumbnail') %></td>
+        <td><%= image_tag(book.cover.url(:thumb), class:'thumbnail') %></td>
         <td><%= book.title %></td>
         <td><%= book.year %></td>
         <td><%= book.author_id %></td>

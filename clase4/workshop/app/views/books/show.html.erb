@@ -14,6 +14,7 @@
   <strong>Author:</strong>
   <%= @book.author_id %>
 </p>
+<div><%= image_tag( @book.cover ) %></div>
 
 <%= link_to 'Edit', edit_book_path(@book) %> |
 <%= link_to 'Back', books_path %>

@@ -26,7 +26,7 @@ es:
       book:
         title: 'Título'
         year: 'Año'
-        author_id: 'Autor'
+        author_id: 'ID de Autor'
     errors:
       messages:
         blank: 'No puede estar vacio'
